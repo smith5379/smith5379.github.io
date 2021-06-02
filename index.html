@@ -201,7 +201,7 @@
 <p>添加关系：<br><code>match (a),(b) where id(a)=9 and id(b)=5 merge (a) -[:test] -&gt; (b)</code></p>
 <p>根据id删除某个关系:<br><code>match(a)-[r]-(b) where id(r)=1103 delete r</code></p>
 <p>根据id查找从该id出发的所有关系</p>
-<p><code>MATCH (c)-[r]-&gt;(d) where id(c) = 5 RETURN r</code></p>
+<p><code>MATCH (c)-[r]-&gt;(d) where id(c) = 5 RETURN r</code><br>123.png</p>
 <p>删除从 c 开始的所有关系:</p>
 <p><code>MATCH (c)-[r]-&gt;(d) where id(c) = 9 delete r</code></p>
  
